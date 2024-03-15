@@ -1,0 +1,132 @@
+.box1{
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+header{
+    background-color: palevioletred;
+}
+
+.tituloSitio{
+    display:flex;
+    justify-content: center;
+}
+.links{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+}
+.link1{
+    border-right: 2px solid gray;
+    padding-right: 150px;
+}
+.link2{
+    border-right: 2px solid gray;
+    padding-right: 150px;
+}
+.link3{
+    border-right: 2px solid gray;
+    padding-right: 150px;
+}
+
+.imagen1flex{
+    display: flex;
+    justify-content: center;
+}
+.texto1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 15px;
+}
+.seccion2{
+    margin-top: 5px;
+}
+.texto2{
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    left: 10px;
+}
+
+.imagen3flex{
+    display: flex;
+    justify-content: flex-end;
+}
+.texto3{
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    left: 1045px;
+}
+
+.imagen1{
+    width: 500px;
+}
+.imagen2{
+    width: 300px;
+}
+.imagen3{
+    width: 300px;
+}
+
+.Autor3{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 50px;
+}
+
+.listaFijada{
+    background-color: palevioletred;
+    border: 2px solid black;
+    width: 60px;
+    height: 80px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.moverLista{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+
+}
+
+/* Estilos predeterminados para el párrafo */
+p {
+    font-size: 16px;
+    color: black;
+}
+  
+/* Media query: cambia el tamaño del texto para pantallas más pequeñas (móviles) y también aplica en pantallas más grandes (ordenadores) */
+@media (mix-width: 1024px){
+    p {
+      font-size: 14px;
+    }
+}
+@media (max-width: 1023px) and (min-width: 768px){
+    p {
+      font-size: 14px;
+    }
+    img {
+        width: 80%; /* Cambia el ancho de la imagen para dispositivos móviles */
+    }
+}
+@media (max-width: 767px) and (min-width: 320px){
+    p {
+      font-size: 14px;
+    }
+    img {
+        width: 80%; /* Cambia el ancho de la imagen para dispositivos móviles */
+    }
+}
