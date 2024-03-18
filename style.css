@@ -1,5 +1,63 @@
 .box1{
     border-bottom: 2px solid black;
+}
+
+header{
+    background-color: palevioletred;
+}
+
+.tituloSitio{
+    display:flex;
+    justify-content: center;
+}
+
+.tituloMenu{
+    border: 1px solid black;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.linksMoviles{
+    display: none;
+}
+
+.linksOrdenador{
+    border: 2px solid black;
+    width: 25%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tituloSeccion1Ordenador{
+    border: 1px solid black;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+}
+.tituloSeccion1Moviles{
+    display: none;
+}
+
+.imagen1{
+    width: 20%;
+}
+.imagen2{
+    width: 100%;
+}
+.imagen3{
+    width: 100%;
+}
+
+@media (max-width: 1023px) and (min-width: 768px){ /*Para moviles*/
+.box1{
+    border-bottom: 2px solid black;
     padding-bottom: 5px;
 }
 
@@ -11,11 +69,19 @@ header{
     display:flex;
     justify-content: center;
 }
-.links{
+.linksMoviles{
     display:flex;
     justify-content: space-evenly;
     padding-top: 5px;
 }
+.linksOrdenador{
+    display: none;
+}
+
+.tituloMenu{
+    display: none;
+}
+
 .link1{
     border-right: 2px solid gray;
     padding-right: 150px;
@@ -27,6 +93,13 @@ header{
 .link3{
     border-right: 2px solid gray;
     padding-right: 150px;
+}
+
+.tituloSeccion1Moviles{
+    width: 100%;
+}
+.tituloSeccion1Ordenador{
+    display: none;
 }
 
 .imagen1flex{
@@ -62,7 +135,7 @@ header{
     display: flex;
     justify-content: flex-end;
     position: relative;
-    left: 1045px;
+    left: 720px;
 }
 
 .imagen1{
@@ -101,32 +174,9 @@ header{
     bottom: 0px;
 
 }
-
+}
 /* Estilos predeterminados para el párrafo */
 p {
     font-size: 16px;
     color: black;
-}
-  
-/* Media query: cambia el tamaño del texto para pantallas más pequeñas (móviles) y también aplica en pantallas más grandes (ordenadores) */
-@media (mix-width: 1024px){
-    p {
-      font-size: 14px;
-    }
-}
-@media (max-width: 1023px) and (min-width: 768px){
-    p {
-      font-size: 14px;
-    }
-    img {
-        width: 80%; /* Cambia el ancho de la imagen para dispositivos móviles */
-    }
-}
-@media (max-width: 767px) and (min-width: 320px){
-    p {
-      font-size: 14px;
-    }
-    img {
-        width: 80%; /* Cambia el ancho de la imagen para dispositivos móviles */
-    }
 }
