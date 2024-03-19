@@ -15,8 +15,9 @@ header{
     border: 1px solid black;
     width: 25%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .linksMoviles{
@@ -33,26 +34,37 @@ header{
     align-items: center;
 }
 
+.menu{
+    display: flex;
+}
+
 .tituloSeccion1Ordenador{
     border: 1px solid black;
     width: 75%;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    
 }
 .tituloSeccion1Moviles{
     display: none;
 }
 
-.imagen1{
+.box2Ordenador{
+    display: flex;
+}
+
+.imagen1flexOrd{
+    display: flex;
+}
+
+.imagen1Ord{
     width: 20%;
 }
-.imagen2{
-    width: 100%;
+.imagen2Ord{
+    width: 20%;
 }
-.imagen3{
-    width: 100%;
+.imagen3Ord{
+    width: 20%;
 }
 
 @media (max-width: 1023px) and (min-width: 768px){ /*Para moviles*/
@@ -98,7 +110,27 @@ header{
 .tituloSeccion1Moviles{
     width: 100%;
 }
+.menu{
+    display: none;
+}
 .tituloSeccion1Ordenador{
+    display: none;
+}
+.box2Ordenador{
+    display: none;
+}
+
+.imagen1flexOrd{
+    display: none;
+}
+
+.imagen1Ord{
+    display: none;
+}
+.imagen2Ord{
+    display: none;
+}
+.imagen3Ord{
     display: none;
 }
 
